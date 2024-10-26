@@ -1,0 +1,22 @@
+Application Structure
+
+bash
+
+.
+├── main.py            # Entry point for the weather monitoring system
+├── config.py          # Configurations for the system (intervals, thresholds)
+├── database.py        # Database interaction logic
+├── alerts.py          # Alert system for threshold-based notifications
+├── visualizations.py  # Code for generating graphs and visualizations
+├── setup_db.py        # Script for setting up the database
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+
+Key Files:
+
+    main.py: Orchestrates the weather data retrieval, processing, and alert system.
+    config.py: Contains configurable settings such as API keys, data fetch intervals, and alert thresholds.
+    database.py: Handles storing and retrieving weather data from the SQLite/PostgreSQL database.
+    alerts.py: Contains logic for threshold checking and alert triggering.
+    visualizations.py: Responsible for generating visualizations (daily weather summaries and alerts).
+
